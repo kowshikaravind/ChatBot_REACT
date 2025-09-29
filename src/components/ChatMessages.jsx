@@ -7,7 +7,7 @@ export const ChatMessages = ({ chatMessages }) => {
   useEffect(() => {
     const element = ref.current;
     if (element) {
-      element.scrollTop = 0;
+      element.scrollTop = element.scrollHeight;
     }
   }, [chatMessages]);
 
